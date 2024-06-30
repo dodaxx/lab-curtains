@@ -1,0 +1,111 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  line-height: 1.2;
+  color: #141414;
+  font-size: 2vw;
+  font-family: "Archivo Black", sans-serif;
+}
+
+#canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+#curtains {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+}
+
+#canvas_2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
+}
+
+.text-plane {
+  display: inline-block;
+  /* apply negative margins and padding to avoid chars from being cropped */
+  margin: -1em;
+  padding: 1em;
+
+  /* hide the original text content */
+  opacity: 0;
+}
+
+h1 {
+  font-size: 75px;
+  text-transform: uppercase;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  width: 30%;
+}
+
+.text-block {
+  width: 50%;
+  margin: 15vh 0;
+}
+
+#scroll {
+  margin-left: 25%;
+}
+
+#lipsum {
+  margin-left: 50%;
+}
+
+.nav {
+  position: relative;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding: 10px 50px;
+}
+
+.nav-logo {
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.nav-menu {
+  background-color: transparent;
+  border: transparent;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px);
+  gap: 50px;
+}
+
+.hero img {
+  position: relative;
+  z-index: 4;
+  width: 850px;
+  height: 550px;
+  object-fit: cover;
+}

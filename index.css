@@ -109,3 +109,23 @@ h1 {
   height: 550px;
   object-fit: cover;
 }
+
+/* our canvas will be a bit taller than our window to avoid "glitched" top and bottom edges */
+#canvas_3 {
+  position: fixed;
+  /* top: -10vh; */
+  right: 0;
+  left: 0;
+  height: 120vh;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.planes-loaded #canvas_3 {
+  opacity: 1;
+}
+
+.plane img {
+  opacity: 0;
+}

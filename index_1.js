@@ -3,6 +3,7 @@ import {
   Vec2,
   PingPongPlane,
   ShaderPass,
+  Plane,
 } from "https://cdn.jsdelivr.net/npm/curtainsjs@8.1.2/src/index.mjs";
 
 const ripplesVs = `
@@ -388,7 +389,6 @@ window.addEventListener("load", () => {
         },
       }
     );
-    console.log(ripples);
     ripples
       .onRender(() => {
         mouse.velocity.set(
